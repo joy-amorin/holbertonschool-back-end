@@ -44,10 +44,5 @@ if __name__ == "__main__":
                 TASK_COMPLETED_STATUS = str(tasks["completed"])
                 TASK_TITLE = tasks["title"]
 
-                f.write('"{}", "{}", "{}", "{}"\n'.format(USER_ID, USERNAME, 
-                                                       TASK_COMPLETED_STATUS,  TASK_TITLE))
-
-
-
-
-
+                f.write('"{}", "{}", "{}", "{}"\n'.format(USER_ID, USERNAME,
+                        TASK_COMPLETED_STATUS,  TASK_TITLE))
