@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""Write a Python script that, using this REST API,
+for a given employee ID, returns
+information about his/her TODO list progress."""
+
 import requests
 from sys import argv
 import csv
@@ -25,14 +29,14 @@ if __name__ == "__main__":
                 realized += 1
 
             else:
-                _tasks += 1
-
-            _tasks += realized
+                _tasks += realized
 
     print(f"Employee {data_user['name']} is done with tasks"
           f"({realized}/{_tasks}):")
     for task_title in completed_tasks:
         print(f"\t {task_title}")
+
+        """export data in the CSV format."""
 
     filename = f"{n}.csv"
     with open(filename, "w") as f:
